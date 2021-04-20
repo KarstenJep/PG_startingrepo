@@ -1,7 +1,9 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const pg = require('pg'); // added in tutorial!!!!!
 
 const app = express();
+
 
 // Setup body parser - to translating request body into JSON
 app.use( bodyParser.urlencoded({ extended: true }));
